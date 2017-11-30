@@ -8,10 +8,10 @@ class conexion{
     public  $conexion;
 
     public function __construct(){
-        $this->servidor   = "localhost";
-	$this->usuario	  = "root";
-	$this->contraseña = "";
-	$this->basedatos  = "procreator";
+        $this->servidor   = "us-cdbr-iron-east-05.cleardb.net";
+	$this->usuario	  = "b28997ab5fdfb1";
+	$this->contraseña = "9e18243a";
+	$this->basedatos  = "heroku_b97c06a746f54b7";
     }
 
     function conectar(){
