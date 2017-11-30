@@ -76,13 +76,13 @@
 
     <script src="resource/vendor/jquery/jquery.min.js"></script>
     <script src="resource/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="resource/vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="resource/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="resource/js/creative.min.js"></script>
     <script src="resource/js/jquery.js"></script>
     <script src="resource/js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="resource/js/jquery.inview.min.js"></script>
     <script src="resource/js/lightbox.min.js"></script>
     <script src="resource/js/main.js"></script>
