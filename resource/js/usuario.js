@@ -1,11 +1,11 @@
 function confirmuser() {
-    var datosform = $('#loginform').serialize(); //alert(datosform);
+    var datosform = $('#loginform').serialize(); alert(datosform);
     $.ajax({
         url: 'controller/usuarioController.php',
         type: 'POST',
         data: datosform + '&funcion=ingresar'
     }).done(function(resp) {
-        if (resp == 'fallo') { //alert(resp);
+        if (resp == 'fallo') { alert(resp);
             $('#wronglog').show().fadeToggle(5000);
         } else {
             location.href = 'view/include/main.php';
