@@ -1,0 +1,232 @@
+{
+    "name": "conversation-simple-example",
+    "created": "2017-11-09T18:53:27.786Z",
+    "intents": [
+        {
+            "intent": "hello",
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "examples": [
+                {
+                    "text": "I have arrived",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "I am here",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "howdy",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "hi",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "hello",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "greetings",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "good morning",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                }
+            ],
+            "description": null
+        },
+        {
+            "intent": "goodbye",
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "examples": [
+                {
+                    "text": "See you later",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Sayonara",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "I'm leaving",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "I am leaving.",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Goodbye",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Farewell",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Bye",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                }
+            ],
+            "description": null
+        },
+        {
+            "intent": "time",
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "examples": [
+                {
+                    "text": "What time of day is it",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "What time is it?",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "What is the current time?",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Tell me the hour of the day.",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Is it late?",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                },
+                {
+                    "text": "Give me the time.",
+                    "created": "2017-11-09T18:53:27.786Z",
+                    "updated": "2017-11-09T18:53:27.786Z"
+                }
+            ],
+            "description": null
+        }
+    ],
+    "updated": "2017-11-09T18:53:27.786Z",
+    "entities": [
+    ],
+    "language": "en",
+    "metadata": {
+        "api_version": {
+            "major_version": "v1",
+            "minor_version": "2017-05-26"
+        }
+    },
+    "description": "A simple Conversation workspace that can detect three intents: #hello, #time, and #goodbye.",
+    "dialog_nodes": [
+        {
+            "title": null,
+            "output": {
+                "text": "Good day to you."
+            },
+            "parent": null,
+            "context": null,
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "metadata": null,
+            "next_step": null,
+            "conditions": "#hello",
+            "description": null,
+            "dialog_node": "node_1_1479323581900",
+            "previous_sibling": "node_1_1480350999019"
+        },
+        {
+            "title": null,
+            "output": {
+                "text": "OK! See you later.",
+                "action": "end_conversation"
+            },
+            "parent": null,
+            "context": null,
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "metadata": null,
+            "next_step": null,
+            "conditions": "#goodbye",
+            "description": null,
+            "dialog_node": "node_1_1479487905980",
+            "previous_sibling": "node_1_1479323581900"
+        },
+        {
+            "title": null,
+            "output": {
+                "action": "display_time"
+            },
+            "parent": null,
+            "context": null,
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "metadata": null,
+            "next_step": null,
+            "conditions": "#time",
+            "description": null,
+            "dialog_node": "node_1_1479840416664",
+            "previous_sibling": "node_1_1479487905980"
+        },
+        {
+            "title": null,
+            "output": {
+                "text": {
+                    "values": [
+                        "Sorry, I have no idea what you're talking about."
+                    ]
+                }
+            },
+            "parent": null,
+            "context": null,
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "metadata": null,
+            "next_step": null,
+            "conditions": "anything_else",
+            "description": null,
+            "dialog_node": "node_2_1479323591143",
+            "previous_sibling": "node_1_1479840416664"
+        },
+        {
+            "title": null,
+            "output": {
+                "text": "Welcome to the Conversation example!"
+            },
+            "parent": null,
+            "context": null,
+            "created": "2017-11-09T18:53:27.786Z",
+            "updated": "2017-11-09T18:53:27.786Z",
+            "metadata": null,
+            "next_step": null,
+            "conditions": "conversation_start",
+            "description": null,
+            "dialog_node": "node_1_1480350999019",
+            "previous_sibling": null
+        }
+    ],
+    "workspace_id": "589ea8ca-05f2-4c57-80b1-686f8056dc1d",
+    "counterexamples": [
+    ],
+    "learning_opt_out": false
+}
