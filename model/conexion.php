@@ -11,7 +11,7 @@ class conexion{
         $this->servidor   = "us-cdbr-iron-east-05.cleardb.net";
 	$this->usuario	  = "b28997ab5fdfb1";
 	$this->contraseña = "9e18243a";
-	$this->basedatos  = "heroku_b97c06a746f54b7?reconnect=true";
+	$this->basedatos  = "heroku_b97c06a746f54b7";
     }
 
     function conectar(){
